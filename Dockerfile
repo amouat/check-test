@@ -2,5 +2,5 @@ FROM golang
 
 COPY . .
 RUN go build .
-RUN cp check-test /check-test
-CMD /check-test
+RUN pwd
+CMD ["/go/check-test"]
